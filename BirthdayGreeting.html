@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREET</title>
+    <meta name="description" content="Click the button to proceed to the greeting page.">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        button {
+            width: 205px;
+            height: 100px;                
+            color: rgb(32, 9, 243);
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+            font-size: 15px;
+            font-weight: bold;
+            background-size: 200px;
+            background-position: center;
+            background-image: url(https://64.media.tumblr.com/ffd8e4e450d45319fc220544093a1b1f/d7ecd417f5ee0c3a-49/s400x600/b45e9ffa2e64c3b2f94e35fe1f02401e3109f79c.gif);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="redirectToAnotherPage()" aria-label="Click here to proceed to the greeting page"><b>Click here!!!</b></button>
+
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = "greet.html"; 
+        }
+    </script>
+</body>
+</html>
